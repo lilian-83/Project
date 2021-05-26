@@ -16,15 +16,15 @@ acc=zeros(grid,grid);
 for p=step:step:1
     for q=step:step:1
         
-        indice_p=p*grid;
-        indice_q=q*grid;
+        indice_p=fix(p*grid);
+        indice_q=fix(q*grid);
         
         x=[ones(m,1); -ones(m,1)]; %truth
         acc1=0;
         
         for i=1:nb
             [g1,G1,Q1,X1,D1]=bin_SBM(m,p,q); %find the solution using bin_SBM
-            if min(norm(x-g1),norm(x+g1))<tol
+            if min(norm(x-g1),norm(x+g1))<1e-10
                 acc1=acc1+1;
             end
             g(:,i,indice_p,indice_q)=g1;
