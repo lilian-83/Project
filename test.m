@@ -2,6 +2,6 @@ clc
 clear
 close all
 
-for i=1:10000000000
+for i=1:100
     disp(i)
 end
