@@ -1,4 +1,4 @@
-function [g,G,Q,X,D,acc]=solve_problems(m,nb,grid)
+function [g,G,Q,acc]=solve_problems(m,nb,grid)
 % function [g,G,Q,D]=solve_problems(m,nb,grid)
 %
 % For a m fixed, solve the binary SBM using the function bin_SBM 
