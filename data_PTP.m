@@ -2,10 +2,10 @@ clc
 clear
 close all
 
-m=500;
-nb=10;
+m=125;
+nb=20;
 grid=200;
 
-[g,G,Q,X,D,acc]=solve_problems(m,nb,grid);
+[g,G,Q,acc]=solve_problems(m,nb,grid);
 
 save("results.mat");
