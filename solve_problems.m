@@ -14,6 +14,8 @@ acc=zeros(grid,grid);
 for p=step:step:1
     for q=step:step:1
         
+        disp(p)
+        
         indice_p=fix(p*grid);
         indice_q=fix(q*grid);
         
