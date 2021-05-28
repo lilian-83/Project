@@ -43,8 +43,8 @@ function hess = getHessian(problem, x, d, storedb, key)
         % Check whether this function wants to deal with storedb or not.
         switch nargin(problem.hess)
             case 2
-                hess = problem.hess(x, d);
                 disp(1);
+                hess = problem.hess(x, d);
             case 3
                 % Obtain, pass along, and save the store for x.
                 store = storedb.getWithShared(key);
