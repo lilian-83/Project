@@ -44,6 +44,7 @@ function hess = getHessian(problem, x, d, storedb, key)
         switch nargin(problem.hess)
             case 2
                 hess = problem.hess(x, d);
+                disp(1);
             case 3
                 % Obtain, pass along, and save the store for x.
                 store = storedb.getWithShared(key);
