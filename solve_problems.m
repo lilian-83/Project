@@ -23,6 +23,7 @@ for p=step:step:1
         acc1=0;
         
         for i=1:nb
+            disp(i)
             [g1,G1,Q1]=bin_SBM(m,p,q); %find the solution using bin_SBM
             if min(norm(x-g1),norm(x+g1))<1e-10
                 acc1=acc1+1;
