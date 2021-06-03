@@ -14,7 +14,7 @@ acc=zeros(grid,grid);
 for p=step:step:1
     for q=step:step:1
         
-        disp(p)
+        % disp(p)
         
         indice_p=fix(p*grid);
         indice_q=fix(q*grid);
@@ -23,7 +23,7 @@ for p=step:step:1
         acc1=0;
         
         for i=1:nb
-            disp(i)
+            % disp(i)
             [g1,G1,Q1]=bin_SBM(m,p,q); %find the solution using bin_SBM
             if min(norm(x-g1),norm(x+g1))<1e-10
                 acc1=acc1+1;
