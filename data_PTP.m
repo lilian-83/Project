@@ -2,9 +2,9 @@ clc
 clear
 close all
 
-m=125;
-nb=10;
-grid=5;
+m=150;
+nb=20;
+grid=500;
 
 [g,G,Q,acc]=solve_problems(m,nb,grid);
 
