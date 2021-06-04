@@ -4,10 +4,6 @@ close all
 
 load("results.mat");
 
-m=20;
-nb=10;
-grid=20;
-
 step=1/grid;
 
 for p=step:step:1
