@@ -5,8 +5,8 @@ close all
 tic
 
 m=150;
-nb=10;
-grid=5;
+nb=20;
+grid=50;
 
 [g,G,Q,acc]=solve_problems_par(m,nb,grid);
 
