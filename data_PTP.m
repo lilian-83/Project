@@ -6,9 +6,9 @@ tic
 
 m=150;
 nb=20;
-grid=5;
+grid=50;
 
-[g,G,Q,acc]=solve_problems_par(m,nb,grid);
+[g,G,Q,acc]=solve_problems(m,nb,grid);
 
 save("results.mat");
 
