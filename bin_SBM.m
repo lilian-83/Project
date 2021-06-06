@@ -1,4 +1,4 @@
-function [g,G,Q,X,D]=bin_SBM(m,p,q)
+function [g,A,Q,X,D]=bin_SBM(m,p,q)
 % function [g,G,Q,D]=bin_SBM(m,p,q)
 %
 % Solves the Binary Stochastic Block Model with the Bureir-Monteiro approach
@@ -15,7 +15,7 @@ function [g,G,Q,X,D]=bin_SBM(m,p,q)
 %
 % Outputs :
 % - g is the vector of labels that the algorithm finds
-% - G is the random graph generated
+% - A is the adjacency matrix of the random graph generated
 % - Q is the solution of the SDP written with the Bureir Monteiro approach
 %   (rank 2 constraint), X=Q*Q'
 % - X is the solution of the SDP relaxation of the MLE
@@ -39,8 +39,6 @@ A3=A3+A3'-diag(diag(A3));
 A2=binornd(1,q,m,m); %edges +1/-1 nodes
 
 A=[A1 A2; A2' A3];
-
-G=graph(A);
 
 %Define A#
 B=A-(p+q)/2*ones(n,n);

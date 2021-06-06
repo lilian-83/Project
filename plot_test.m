@@ -1,20 +1,20 @@
+%
+
 clc
 clear
 close all
 
 load("results.mat");
 
-step=1/grid;
-
-for p=step:step:1
-    for q=step:step:1
-        scatter(q,p,[],'MarkerEdgeColor',acc(fix(p*grid),fix(q*grid))*[1 1 1],'MarkerFaceColor',acc(fix(p*grid),fix(q*grid))*[1 1 1]);
+for p=1:grid
+    for q=1:grid
+        scatter(q/grid,p/grid,[],'MarkerEdgeColor',acc(p,q)*[1 1 1],'MarkerFaceColor',acc(p,q)*[1 1 1]);
         hold on;
     end
 end
 
-xlim([step 1]);
-ylim([step 1]);
+xlim([1/grid 1]);
+ylim([1/grid 1]);
 xlabel('q');
 ylabel('p');
 colormap gray;
