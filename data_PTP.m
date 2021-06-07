@@ -13,7 +13,7 @@ m=150;
 nb=20;
 grid=200;
 
-[g,A,Q,acc]=solve_problems(m,nb,grid);
+[g,G,Q,acc]=solve_problems(m,nb,grid);
 
 save("results.mat");
 
