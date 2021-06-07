@@ -11,7 +11,7 @@ tic
 
 m=150;
 nb=20;
-grid=5;
+grid=200;
 
 [g,A,Q,acc]=solve_problems(m,nb,grid);
 
