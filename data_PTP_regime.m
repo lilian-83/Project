@@ -6,7 +6,7 @@ tic
 
 m=150;
 nb=20;
-grids=5;
+grids=200;
 
 [g1,G1,Q1,acc1]=solve_problems_regime(m,nb,grids);
 
