@@ -4,8 +4,8 @@ n=2*m;
 
 WaitMessage = parfor_wait(grids);
 
-alpha=linspace(0,30,grids);
-beta=linspace(0,10,grids);
+a=linspace(0,30,grids);
+b=linspace(0,10,grids);
 
 c=zeros(grids,grids);
 

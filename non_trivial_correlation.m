@@ -9,7 +9,7 @@ triv=z'*g/n; %trivial correlation ?
 
 av=0; %average of non-trivial correlations
 for i=1:nb
-    [g,~,Q,~]=bin_SBM(m,p,q);
+    [~,~,Q,~]=bin_SBM(m,p,q);
     av=av+norm(Q'*g)/n;
 end
 av=av/nb;
